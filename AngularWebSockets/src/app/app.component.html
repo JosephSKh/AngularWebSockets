@@ -1,0 +1,8 @@
+<h1>
+  Welcome to: {{title}}
+</h1>
+<ul>
+  <li *ngFor="let message of messages">{{message}}</li>
+</ul>
+<textarea placeholder="type in your message" [(ngModel)]="myMessage"></textarea>
+<button (click)="send(myMessage)">Send !</button>
